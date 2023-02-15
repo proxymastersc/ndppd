@@ -1,0 +1,20 @@
+Source: ndppd
+Section: net
+Priority: extra
+Maintainer: Daniel Adolfsson <daniel@priv.nu>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.2
+Homepage: http://www.priv.nu/projects/ndppd
+Vcs-Git: git://github.com/Tuhox/ndppd.git
+Vcs-Browser: https://github.com/Tuhox/ndppd/tree/debian
+
+Package: ndppd
+Architecture: linux-any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: daemon that proxies IPv6 NDP messages
+ ndppd is a daemon that proxies certain IPv6 NDP messages between two or 
+ more interfaces. It currently supports proxying Neighbor Solicitation
+ Messages and Neighbor Advertisement messages in order to allow IPv6
+ routing without relying on Linux "proxy_ndp". 
+ .
+ The daemon is partially compliant with (experimental) RFC4389.
